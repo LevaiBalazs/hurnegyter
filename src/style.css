@@ -3,11 +3,16 @@ body{
     opacity: 0.85;
     
 }
-nav{
+.nav{
     
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+   
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        margin-top: 20px;
+   
 
 }
 nav ul{
@@ -29,4 +34,24 @@ nav ul li a{
 .footer-heading {
     margin: 0;
     
+}
+
+/*
+Def.html
+*/
+body div.container-def p{
+    font-size: 25px;
+} 
+.flex-container {
+    display: flex;
+}
+
+
+.nav-def {
+    flex: 0;
+}
+
+.content {
+    flex: 1;
+    padding-left: 200px;
 }
