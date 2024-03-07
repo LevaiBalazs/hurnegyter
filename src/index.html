@@ -1,0 +1,53 @@
+<!--
+File: index.html
+Author: Lévai Balázs István
+Copyright: 2024, Lévai Balázs István
+Group: Szoft I/1/N
+Date: 2024-03-07
+Github: https://github.com/levaibalazs/
+Licenc: GNU GPL
+-->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurnegyter</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Húrnégyszög területszámítás</h1>
+        <div class="negyzetform">
+            <div class="input">
+                <label for="sideA">Oldal -A</label>
+                <input type="text" class="form-control" id="sideA" required>
+            </div>
+            <div class="input">
+                <label for="sideB">Oldal -B</label>
+                <input type="text" class="form-control" id="sideB" required>
+            </div>
+            <div class="input">
+                <label for="sideC">Oldal -C</label>
+                <input type="text" class="form-control" id="sideC" required>
+            </div>
+            <div class="input">
+                <label for="sideD">Oldal -D</label>
+                <input type="text" class="form-control" id="sideD" required>
+            </div>
+
+            <div class="mt-2">
+                <button id="calcButton" class="btn btn-primary">Számol</button>
+            </div>
+
+            <div class="input">
+                <label for="area">Terület</label>
+                <input type="text" class="form-control" id="area" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
