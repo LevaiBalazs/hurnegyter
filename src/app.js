@@ -25,18 +25,25 @@ function calcStart(){
     const b = Number(sideBInput.value)
     const c = Number(sideCInput.value)
     const d = Number(sideDInput.value)
-    const area = calcArea(a,b,c,d)
+    if (a + b + c > d && a + b + d > c && a + c + d > b && b + c + d > a) {
+        const area = calcArea(a,b,c,d)
     console.log("Terület=",area)
     areaInput.value=area
+    }
+    else{
+        console.log("Helytelen értékek négyzet létrehozásához")
+        areaInput.value = "Invalid"
+    }
+    
     
 }
 
 function calcArea(a,b,c,d){
-    const s = halfpariCalc(a,b,c,d)
+    const s = halfPeriCalc(a,b,c,d)
     let area = Math.sqrt((s-a)*(s-b)*(s-c)*(s-d))
     return area
 }
-function halfpariCalc(a,b,c,d){
+function halfPeriCalc(a,b,c,d){
     
     return (a+b+c+d)/2
     
