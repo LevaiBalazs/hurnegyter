@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(229, 170, 112);
+    opacity: 0.85;
+    
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFDD0;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.footer-heading {
+    margin: 0;
+    
+}
